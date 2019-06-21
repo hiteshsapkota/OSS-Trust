@@ -5,6 +5,12 @@ Created on Thu Aug 16 04:07:55 2018
 
 @author: hiteshsapkota
 """
+
+"""
+Experiments with different models and picks the best one. 
+In our experimentation, the best one is XGBoost.
+Stores the final model trained on a manually annotated data as finalized_model.sav.
+"""
 import json
 import numpy as np
 from sklearn.metrics import f1_score
@@ -15,7 +21,6 @@ import random
 from sklearn.metrics import classification_report
 from sklearn.preprocessing import Imputer
 from nltk.sentiment.vader import SentimentIntensityAnalyzer
-sid = SentimentIntensityAnalyzer()
 from regressor import AdaBoost
 from sklearn.metrics import mean_absolute_error
 from sklearn.metrics import mean_squared_error
@@ -30,8 +35,15 @@ import pandas as pd
 from sklearn.decomposition import PCA
 from statsmodels.stats.outliers_influence import variance_inflation_factor    
 
+sid = SentimentIntensityAnalyzer()
 
 def calculate_vif_(X, thresh=6.0):
+    """
+    Args:
+        X input N*D where N is number of datasets, D is number of variables
+    Returns:
+        X N*M where M is total number of useful variables
+    """
     variables = list(range(X.shape[1]))
     dropped = True
     while dropped:
@@ -53,6 +65,7 @@ def calculate_vif_(X, thresh=6.0):
 
 data_path="Dataset/Generated"
 role_feat_map={'NONE':0, 'FIRST_TIME_CONTRIBUTOR':1, 'FIRST_TIMER':2, 'CONTRIBUTOR':3, 'COLLABORATOR':4, 'MEMBER':5, 'OWNER':6}
+
 def mapped_label(label):
     if int(label)>3:
         return 1
@@ -193,6 +206,8 @@ filter_pr_acc_hist = []
 labels=[]
 other_sent_feat=[]
 count=0
+
+"""Creates matrix for the training data"""
 for project, project_data in label_pr_map.items(): 
     for pr_id in project_data:
         commenters_data=label_pr_map[project][pr_id]
@@ -243,6 +258,9 @@ test_dataset=np.zeros((len(filter_sent_feat)-int(np.floor(len(filter_sent_feat)*
 train_label=[0]*int(np.floor(len(filter_sent_feat)*0.7))
 
 test_label=[0]*(len(filter_sent_feat)-int(np.floor(len(filter_sent_feat)*0.7)))
+
+"""Creates matrix for the testing data"""
+
 for i in range(0, int(np.floor(len(filter_sent_feat)*0.7))):
     k=0
     for collection_feature in collection_features:
@@ -284,24 +302,7 @@ filter_test_df = test_df.iloc[:, included_features]
 [train_df, rem_features_idx] = calculate_vif_(train_df)
 test_df = test_df.iloc[:, rem_features_idx]
 
-
-#print("Shape of train dataset:", train_df.shape)
-#print("Shape of test dataset:", test_df.shape)
-#
-
-#Cs = [0.5, 1, 1.5]
-#gammas = [0.1, 0.2, 0.5]
-#for C in Cs:
-#    for gamma in gammas:
-#        print("\n Working with C:", C, "and gamma value:", gamma)
-#        [result, model] = SupportVec(filter_train_df, filter_test_df, train_label, C=C, gamma=gamma)
-#        features = ['Pos Sent', 'Neg Sent', 'Gen follow Comm', 'Comm follow Gen', 'Max comm len']
-#        with open(data_path+"/useful_features.json", "w") as file:
-#            json.dump(features, file)
-#        filename = data_path+"/finalized_model.sav"
-#        print("Mean absolute error is:", mean_absolute_error(test_label, result))
-#        print("Mean square error is:", np.sqrt(mean_squared_error(test_label, result)))
-
+"""Trains XGBoost and returns corresponding predicted test labels"""
 
 [result, model] = XGBoost(filter_train_df, filter_test_df, train_label)
 features = ['Pos Sent', 'Neg Sent', 'Gen follow Comm', 'Comm follow Gen', 'Max comm len']
@@ -311,12 +312,4 @@ filename = data_path+"/finalized_model.sav"
 print("Mean absolute error is:", mean_absolute_error(test_label, result))
 print("Mean square error is:", np.sqrt(mean_squared_error(test_label, result)))
 features = [feature for feature in feature_names if feature_names.index(feature) in rem_features_idx]
-
-
-
-
-print("Feature Importance:", model.feature_importances_)
-plt.bar(range(len(model.feature_importances_)), model.feature_importances_)
-plt.xticks(range(len(rem_features_idx)), [feature for feature in feature_names if feature_names.index(feature) in rem_features_idx])
-plt.show()
 
