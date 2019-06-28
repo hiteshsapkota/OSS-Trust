@@ -1,5 +1,6 @@
 # Trust
 Code for the paper "Estimating Trust between OSS Developers"
+
 CODE DESCRIPTION:
     It has following python scripts:
 1. train.py:
