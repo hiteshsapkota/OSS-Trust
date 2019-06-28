@@ -2,7 +2,8 @@
 Code for the paper "Estimating Trust between OSS Developers"
 
 CODE DESCRIPTION:
-    It has following python scripts:
+
+   It has following python scripts:
 1. train.py:
     Trains the model using a manually labeled dataset and stores the corresponding trained model on             Dateset/Generated/finalized_model.sav.
 
