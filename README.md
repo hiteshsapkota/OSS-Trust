@@ -1,5 +1,17 @@
-# Trust
-Code for the paper "Estimating Trust between OSS Developers"
+DATASET DESCRIPTION:
+1. all_projects.csv consists of list of projects corresponding to the different programming language. We have selected Python specific projects only.
+
+2. manual_annotated_pr.json consists of all manually labeled pull requests along with the corresponding interaction types between generator and commenters. This file has an array of json object with the following format:
+{project name: {PR ID: {commenter1: score}}}
+
+3. result_trust_values.csv consists of resulting trust values (belief, disbelief, uncertainty) with corresponding PR status (accepted, rejected).
+
+4. PR Requests.zip consists of the response of all pull requests for 179 projects from the GitHub API. Each response is stored as the following:
+      PR number:{response}
+For the response format refer to the link: https://developer.github.com/v3/pulls/
+
+5. preprocomm.json.zip consists of all the preprocessed comments. The file has an array of json object with the following format:
+{projectname: {pr_id: [generator, creation date, {commenter: comment}]}}
 
 CODE DESCRIPTION:
 
@@ -24,8 +36,8 @@ CODE DESCRIPTION:
    Computes trust value for the pull requests that are in a test set
  
 RESULT REPLICATION DESCRIPTION:
-1. To generate table 4, use train.py with different regression techniques. For this use preprocomm.json data which can be downloaded from the link https://figshare.com/s/954f57da35d62f870ad8.
+1. To generate table 4, use train.py with different regression techniques. For this use preprocomm.json located in Dataset/Generated directory.
 2. To generate table 5, use the network constructed using construct_graph.py and use trustpropagation.py. 
-3. To generate Figure 4, 5, and 6 , download result_trust_values.txt dataset.
-4. To generate generate the data for table 6, download Pull Requests.zip and result_trust_values.txt  data from the link https://figshare.com/s/954f57da35d62f870ad8 and run the required classifiers from the scikit-learn package. 
+3. To generate Figure 4, 5, and 6 , use result_trust_values.txt located in Dataset directory.
+4. To generate generate the data for table 6, use Pull-Requests.zip (divided into Pull-Requests-part1.zip, Pull-requests-part2.zip, and Pull-Requests-part3.zip)  and result_trust_values.txt. 
    
