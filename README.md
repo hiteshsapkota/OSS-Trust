@@ -19,5 +19,8 @@ It has following python scripts:
     
 6. PR_evaluation.py
    Computes trust value for the pull requests that are in a test set
+  
+In order to generate the data for table 6, we can use a classifiers from scikit-learn package from the python. Data for the 
+Hisotry Model can be crawled from the GitHub API whereas, for the Trust Model, dataset is provided in the link 
    
    
