@@ -63,7 +63,7 @@ def calculate_vif_(X, thresh=6.0):
     return [X.iloc[:, variables], variables]
 
 
-data_path="Dataset/Generated"
+data_path=""
 role_feat_map={'NONE':0, 'FIRST_TIME_CONTRIBUTOR':1, 'FIRST_TIMER':2, 'CONTRIBUTOR':3, 'COLLABORATOR':4, 'MEMBER':5, 'OWNER':6}
 
 def mapped_label(label):
@@ -167,33 +167,53 @@ def getsentscore(comments):
     result.append(np.mean(all_comp))
     return result
         
+def trainTestSplit(train_dataset, train_label, test_dataset, test_label, length_dataset, collection_features):
+    all_index = range(0, length_dataset)
+    train_index = random.sample(all_index, int(np.floor(length_dataset)*0.7))
+    test_index = list(set(all_index)-set(train_index))
+    for i, idx in enumerate(train_index):
+        k=0
+        for collection_feature in collection_features:
+            for j in range(0, len(collection_feature[idx])):
+                train_dataset[i, k] = collection_feature[idx][j]
+                k=k+1
+        train_label[i] = labels[idx]
+    for i, idx in enumerate(test_index):
+        k=0
+        for collection_feature in collection_features:
+            for j in range(0, len(collection_feature[idx])):
+                test_dataset[i, k] = collection_feature[idx][j]
+                k=k+1
+        test_label[i]=labels[idx]
+    return [train_dataset, train_label, test_dataset, test_label]
+
     
     
-with open(data_path+"/Train/label_pr_map.json") as outfile:
+with open(data_path+"Train/label_pr_map.json") as outfile:
     label_pr_map=json.load(outfile)
     
-with open(data_path+"/preprocomm.json") as outfile:
+with open(data_path+"preprocomm.json") as outfile:
     prepro_comments=json.load(outfile)
     
-with open(data_path+"/Train/sent_features.json") as outfile:
+with open(data_path+"Train/sent_features.json") as outfile:
     sent_features=json.load(outfile)
 
-with open(data_path+"/Train//ml_follow_data.json") as outfile:
+with open(data_path+"Train//ml_follow_data.json") as outfile:
     ml_follow_data=json.load(outfile)
     
-with open(data_path+"/Train/ml_pr_specific.json") as outfile:
+with open(data_path+"Train/ml_pr_specific.json") as outfile:
     ml_pr_data=json.load(outfile)
 
-with open(data_path+"/Train/status_shared_repo.json") as outfile:
+with open(data_path+"Train/status_shared_repo.json") as outfile:
     ml_repo_data=json.load(outfile)
     
-with open(data_path+"/Train/status_shared_pr.json") as outfile:
+with open(data_path+"Train/status_shared_pr.json") as outfile:
     ml_shared_pr_data=json.load(outfile)
     
-with open(data_path+"/Train/prepro_word2vec_feat.json") as outfile:
+with open(data_path+"Train/prepro_word2vec_feat.json") as outfile:
     word2vec_feat=json.load(outfile)
     
-with open(data_path+"/pr_acceptance_hist.json") as outfile:
+with open(data_path+"pr_acceptance_hist.json") as outfile:
     pr_acceptance_hist = json.load(outfile)
     
 filter_sent_feat=[]
@@ -253,63 +273,52 @@ collection_features = [filter_pr_spec_feat, filter_pr_acc_hist, filter_sent_feat
 
 no_features = len(filter_pr_spec_feat[0])+len(filter_pr_acc_hist[0])+len(filter_sent_feat[0])+len(filter_follow_feat[0])
 
-train_dataset = np.zeros((int(np.floor(len(filter_sent_feat)*0.7)),no_features))
-test_dataset=np.zeros((len(filter_sent_feat)-int(np.floor(len(filter_sent_feat)*0.7)),no_features))
-train_label=[0]*int(np.floor(len(filter_sent_feat)*0.7))
-
-test_label=[0]*(len(filter_sent_feat)-int(np.floor(len(filter_sent_feat)*0.7)))
-
-"""Creates matrix for the testing data"""
-
-for i in range(0, int(np.floor(len(filter_sent_feat)*0.7))):
-    k=0
-    for collection_feature in collection_features:
-        for j in range(0, len(collection_feature[i])):
-            train_dataset[i, k] = collection_feature[i][j]
-            k=k+1
-    train_label[i]=labels[i]
-
-initial_point =  int(np.floor(len(filter_sent_feat)*0.7))
-for i in range(initial_point, len(filter_sent_feat)):
-    k=0
-    for collection_feature in collection_features:
-        for j in range(0, len(collection_feature[i])):
-            test_dataset[i-initial_point, k] = collection_feature[i][j]
-            k=k+1
-    test_label[i-initial_point]=labels[i]
-    
-
-
 
     
-train_dataset = np.asarray(train_dataset)
-test_dataset = np.asarray(test_dataset)
-
+    
+    
 
 feature_names = ['Mean time diff', 'Median Time diff', 'Min Time diff', 'Max Time diff', 'Total Time diff', 'SD Time diff', \
                  'No files changed', 'No commits', 'No added lines', 'No deleted lines', 'Total comments', 'Min comm len', \
                  'Max comm len', 'Mean comm len', 'Med comm len', 'SD comm len', 'Coll role', 'Accepted PR', 'Rejected PR', \
                  'Pos Sent', 'Neg Sent', 'Gen follow Comm', 'Comm follow Gen']
+    
 
-train_df = pd.DataFrame(data=train_dataset, columns = feature_names)
-test_df = pd.DataFrame(data=test_dataset, columns = feature_names)
+"""Creates matrix for the testing data"""
+file_to_store = {}
+classifiers = [XGBoost, AdaBoost, Bagging, LASSO, SupportVec]
+classifier_name = ['XGBoost', 'AdaBoost', 'Bagging', 'LASSO', 'SupportVec']
+for classifier in classifier_name:
+    file_to_store[classifier]=[]
 
-included_features = [feature_names.index('Pos Sent'), feature_names.index('Neg Sent'), feature_names.index('Gen follow Comm'),feature_names.index('Comm follow Gen'),  feature_names.index('Max comm len')]
-
-filter_train_df = train_df.iloc[:, included_features]
-filter_test_df = test_df.iloc[:, included_features]
-
-[train_df, rem_features_idx] = calculate_vif_(train_df)
-test_df = test_df.iloc[:, rem_features_idx]
-
-"""Trains XGBoost and returns corresponding predicted test labels"""
-
-[result, model] = XGBoost(filter_train_df, filter_test_df, train_label)
-features = ['Pos Sent', 'Neg Sent', 'Gen follow Comm', 'Comm follow Gen', 'Max comm len']
-with open(data_path+"/useful_features.json", "w") as file:
-    json.dump(features, file)
-filename = data_path+"/finalized_model.sav"
-print("Mean absolute error is:", mean_absolute_error(test_label, result))
-print("Mean square error is:", np.sqrt(mean_squared_error(test_label, result)))
-features = [feature for feature in feature_names if feature_names.index(feature) in rem_features_idx]
+for rep in range(0, 30):
+        print("Working on the replica", rep)
+        train_dataset = np.zeros((int(np.floor(len(filter_sent_feat)*0.7)),no_features))
+        test_dataset=np.zeros((len(filter_sent_feat)-int(np.floor(len(filter_sent_feat)*0.7)),no_features))
+        train_label=[0]*int(np.floor(len(filter_sent_feat)*0.7))
+        test_label=[0]*(len(filter_sent_feat)-int(np.floor(len(filter_sent_feat)*0.7)))
+        [train_dataset, train_label, test_dataset, test_label] = trainTestSplit(train_dataset, train_label, test_dataset, test_label, len(filter_sent_feat), collection_features)
+        train_dataset = np.asarray(train_dataset)
+        test_dataset = np.asarray(test_dataset)
+        train_df = pd.DataFrame(data=train_dataset, columns = feature_names)
+        test_df = pd.DataFrame(data=test_dataset, columns = feature_names)
+        included_features = [feature_names.index('Pos Sent'), feature_names.index('Neg Sent'), feature_names.index('Gen follow Comm'),feature_names.index('Comm follow Gen'),  feature_names.index('Max comm len')]
+        filter_train_df = train_df.iloc[:, included_features]
+        filter_test_df = test_df.iloc[:, included_features]
+        [train_df, rem_features_idx] = calculate_vif_(train_df)
+        test_df = test_df.iloc[:, rem_features_idx]
+        features = ['Pos Sent', 'Neg Sent', 'Gen follow Comm', 'Comm follow Gen', 'Max comm len']
+        with open(data_path+"useful_features.json", "w") as file:
+            json.dump(features, file)
+        for i, classifier in enumerate(classifiers):
+            print("Working on the classifier", classifier)
+            [result, model] = classifier(filter_train_df, filter_test_df, train_label)
+            filename = data_path+"finalized_model.sav"
+            mae = mean_absolute_error(test_label, result)
+            print("MAE is:", mae)
+            file_to_store[classifier_name[i]].append(mae)
+with open("MAE_Classifier.json", "w") as infile:
+    json.dump(file_to_store, infile)
+            
+            
 
