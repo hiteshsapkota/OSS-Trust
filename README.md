@@ -15,6 +15,8 @@ For the response format refer to the link: https://developer.github.com/v3/pulls
 6. accuracy_trust_metrics.csv consists of the accuracy metrics (precision, recall, f1-score) obtained using Trust model for 30 different replicas.
 7. accuracy_pr_hist.csv consists of the accuracy metrics (precision, recall, f1-score) obtained using History model for 30 different replicas.
 8. accuracy_trust_pr_hist.csv consists of the accuracy metrics (precision, recall, f1-score) obtained using Hybrid model for 30 different replicas.
+9. MAE_classifier.json consists of MAE score for the regression techniques described in Table 4. It has following format:
+  {Classifier_name: [MAE values for 30 replicas]}
 
 CODE DESCRIPTION:
 
