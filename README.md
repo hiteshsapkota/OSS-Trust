@@ -12,6 +12,9 @@ For the response format refer to the link: https://developer.github.com/v3/pulls
 
 5. preprocomm.json.zip consists of all the preprocessed comments. The file has an array of json object with the following format:
 {projectname: {pr_id: [generator, creation date, {commenter: comment}]}}
+6. accuracy_trust_metrics.csv consists of the accuracy metrics (precision, recall, f1-score) obtained using Trust model for 30 different replicas.
+7. accuracy_pr_hist.csv consists of the accuracy metrics (precision, recall, f1-score) obtained using History model for 30 different replicas.
+8. accuracy_trust_pr_hist.csv consists of the accuracy metrics (precision, recall, f1-score) obtained using Hybrid model for 30 different replicas.
 
 CODE DESCRIPTION:
 
