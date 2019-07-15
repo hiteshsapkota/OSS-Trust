@@ -35,7 +35,7 @@ with open(data_path+"statusfollow.json") as outfile:
 with open(data_path+"pr_specific_feat.json") as outfile:
     pr_specific_data=json.load(outfile)
   
-with open(data_path+"/pr_acceptance_hist.json") as outfile:
+with open(data_path+"pr_acceptance_hist.json") as outfile:
     pr_acceptance_hist = json.load(outfile)    
     
     
