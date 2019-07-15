@@ -12,10 +12,16 @@ For the response format refer to the link: https://developer.github.com/v3/pulls
 
 5. preprocomm.json.zip consists of all the preprocessed comments. The file has an array of json object with the following format:
 {projectname: {pr_id: [generator, creation date, {commenter: comment}]}}
-6. accuracy_trust_metrics.csv consists of the accuracy metrics (precision, recall, f1-score, tp, tn, fp, fn) obtained using Trust model for 30 different replicas.
-7. accuracy_pr_hist.csv consists of the accuracy metrics (precision, recall, f1-score, tp, tn, fp, fn) obtained using History model for 30 different replicas.
-8. accuracy_trust_pr_hist.csv consists of the accuracy metrics (precision, recall, f1-score, tp, tn, fp, fn) obtained using Hybrid model for 30 different replicas.
-9. MAE_classifier.json consists of MAE score for the regression techniques described in Table 4. It has following format:
+
+6. manual_annotation.csv consists of a manually annotated score for the generator from commenter's perspective. Corresponding preprocessed commenter's comment can be fetched as preprocomm[projectname][pr_id][2][commenter] from the preprocomm.json file. 
+
+7. accuracy_trust_metrics.csv consists of the accuracy metrics (precision, recall, f1-score, tp, tn, fp, fn) obtained using Trust model for 30 different replicas.
+
+8. accuracy_pr_hist.csv consists of the accuracy metrics (precision, recall, f1-score, tp, tn, fp, fn) obtained using History model for 30 different replicas.
+
+9. accuracy_trust_pr_hist.csv consists of the accuracy metrics (precision, recall, f1-score, tp, tn, fp, fn) obtained using Hybrid model for 30 different replicas.
+
+10. MAE_classifier.json consists of MAE score for the regression techniques described in Table 4. It has following format:
   {Classifier_name: [MAE values for 30 replicas]}
 
 CODE DESCRIPTION:
