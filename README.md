@@ -45,6 +45,8 @@ CODE DESCRIPTION:
     
 6. PR_evaluation.py
    Computes trust value for the pull requests that are in a test set
+7. classifier.py
+   Computes and stores the accuracy metrics (precision, recall, f1-score, tp, tn, fp, fn) for Decision Tree classifier for:         (1) History Model, (2) Trust Model, (3) Hybrid Model.
  
 RESULT REPLICATION DESCRIPTION:
 1. To generate table 4, use train.py with different regression techniques. For this use preprocomm.json located in Dataset/Generated directory.
