@@ -308,7 +308,7 @@ for rep in range(0, 30):
         [train_df, rem_features_idx] = calculate_vif_(train_df)
         test_df = test_df.iloc[:, rem_features_idx]
         features = ['Pos Sent', 'Neg Sent', 'Gen follow Comm', 'Comm follow Gen', 'Max comm len']
-        with open(data_path+"useful_features.json", "w") as file:
+        with open(data_path+"Dataset/Generateduseful_features.json", "w") as file:
             json.dump(features, file)
         for i, classifier in enumerate(classifiers):
             print("Working on the classifier", classifier)
