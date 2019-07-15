@@ -189,31 +189,31 @@ def trainTestSplit(train_dataset, train_label, test_dataset, test_label, length_
 
     
     
-with open(data_path+"Train/label_pr_map.json") as outfile:
+with open(data_path+"Dataset/Generated/label_pr_map.json") as outfile:
     label_pr_map=json.load(outfile)
     
-with open(data_path+"preprocomm.json") as outfile:
+with open(data_path+"Dataset/Generated/preprocomm.json") as outfile:
     prepro_comments=json.load(outfile)
     
-with open(data_path+"Train/sent_features.json") as outfile:
+with open(data_path+"Dataset/Generated/sent_features.json") as outfile:
     sent_features=json.load(outfile)
 
-with open(data_path+"Train//ml_follow_data.json") as outfile:
+with open(data_path+"Dataset/Generated//ml_follow_data.json") as outfile:
     ml_follow_data=json.load(outfile)
     
-with open(data_path+"Train/ml_pr_specific.json") as outfile:
+with open(data_path+"Dataset/Generated/ml_pr_specific.json") as outfile:
     ml_pr_data=json.load(outfile)
 
-with open(data_path+"Train/status_shared_repo.json") as outfile:
+with open(data_path+"Dataset/Generated/status_shared_repo.json") as outfile:
     ml_repo_data=json.load(outfile)
     
-with open(data_path+"Train/status_shared_pr.json") as outfile:
+with open(data_path+"Dataset/Generated/status_shared_pr.json") as outfile:
     ml_shared_pr_data=json.load(outfile)
     
-with open(data_path+"Train/prepro_word2vec_feat.json") as outfile:
+with open(data_path+"Dataset/Generated/prepro_word2vec_feat.json") as outfile:
     word2vec_feat=json.load(outfile)
     
-with open(data_path+"pr_acceptance_hist.json") as outfile:
+with open(data_path+"Dataset/Generated/pr_acceptance_hist.json") as outfile:
     pr_acceptance_hist = json.load(outfile)
     
 filter_sent_feat=[]
@@ -313,11 +313,11 @@ for rep in range(0, 30):
         for i, classifier in enumerate(classifiers):
             print("Working on the classifier", classifier)
             [result, model] = classifier(filter_train_df, filter_test_df, train_label)
-            filename = data_path+"finalized_model.sav"
+            filename = data_path+"Dataset/Generated/finalized_model.sav"
             mae = mean_absolute_error(test_label, result)
             print("MAE is:", mae)
             file_to_store[classifier_name[i]].append(mae)
-with open("MAE_Classifier.json", "w") as infile:
+with open("Dataset/Generated/MAE_Classifier.json", "w") as infile:
     json.dump(file_to_store, infile)
             
             
