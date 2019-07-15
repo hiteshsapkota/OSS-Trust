@@ -1,0 +1,711 @@
+Project,ID,Generator,Commenter,Label
+robottelo,954,elyezer,robottelo-bot,3
+robottelo,954,elyezer,sthirugn,4
+robottelo,954,elyezer,Ichimonji10,4
+luigi,657,themalkolm,Tarrasch,4
+luigi,657,themalkolm,erikbern,4
+OpenSlides,610,emanuelschuetze,normanjaeckel,4
+OpenSlides,610,emanuelschuetze,ostcar,5
+tgstation,2424,RemieRichards,theOperand,2
+cryptography,1600,alex,jenkins-cryptography,4
+cryptography,1600,alex,public,3
+cryptography,1600,alex,glyph,4
+mne-python,1063,teonbrooks,agramfort,4
+pandas,4592,Komnomnomnom,jreback,4
+OpenSlides,1514,emanuelschuetze,normanjaeckel,3
+OpenSlides,1514,emanuelschuetze,ostcar,2
+Theano,5885,AndreiCostinescu,nouiz,4
+mne-python,1595,dengemann,agramfort,4
+scikit-image,1139,grlee77,ahojnnes ,5
+scikit-image,1139,grlee77,stefanv,3
+scikit-image,1139,grlee77,blink1073,5
+scikit-image,1139,grlee77,tonysyu,5
+vumi-go,839,jerith,rudigiesler,4
+django-rest-framework,3868,jamesbeith,xordoquy,3
+django-rest-framework,3868,jamesbeith,tomchristie,4
+c2cgeoportal,209,elemoine,sbrunner,4
+c2cgeoportal,209,elemoine,asaunier,4
+robottelo,613,AdamSaleh,elyezer,2
+robottelo,613,AdamSaleh,omaciel,4
+tgstation,4974,GunHog,ike709,4
+tgstation,4974,GunHog,optimumtact ,2
+tgstation,4974,GunHog,theOperand ,4
+tgstation,4974,GunHog,Cheridan,5
+tgstation,4974,GunHog,Jalleo,3
+tgstation,4974,GunHog,ChangelingRain,3
+tgstation,4974,GunHog,paprka,4
+tgstation,4974,GunHog,Dorsisdwarf,3
+addons-server,2023,muffinresearch,EnTeQuAk,4
+addons-server,2023,muffinresearch,diox,4
+ome-documentation,365,mtbc,hflynn,4
+ome-documentation,365,mtbc,jburel,4
+ome-documentation,365,mtbc,joshmoore,3
+mackup,143,Cottser,lra,4
+django-cms,2753,koirikivi,hcNick,5
+django-cms,2753,koirikivi,digi604,5
+django-cms,2753,koirikivi,tanderegg,5
+commcare-hq,14563,esoergel,czue,4
+commcare-hq,14563,esoergel,kkrampa,3
+tgstation,18299,PKPenguin321,Supermichael777,3
+tgstation,15374,neersighted,PKPenguin321,4
+tgstation,15374,neersighted,duncathan,3
+tgstation,15374,neersighted,imtakingabreakdontatme,2
+tgstation,7864,Jordie0608,theOperand,4
+botocore,240,jlafon,disruptek,5
+pandas,9226,tvyomkesh,Joris Van den Bossche,3
+pandas,9226,tvyomkesh,jreback ,4
+requests,1742,kevinburke,dpursehouse,3
+requests,1742,kevinburke,Lukasa,5
+requests,1742,kevinburke,kennethreitz ,5
+tgstation,23211,imtakingabreakdontatme,francinum,2
+tgstation,23211,imtakingabreakdontatme,SgtxRootbeer,3
+tgstation,23211,imtakingabreakdontatme,lzimann ,2
+tgstation,23211,imtakingabreakdontatme,MimicFaux,3
+tgstation,23211,imtakingabreakdontatme,Fox-McCloud,3
+tgstation,23211,imtakingabreakdontatme,improvedname,3
+tgstation,23211,imtakingabreakdontatme,Magikarpet,3
+tgstation,23211,imtakingabreakdontatme,Kromgar,2
+tgstation,23211,imtakingabreakdontatme,kevinz000,3
+tgstation,23211,imtakingabreakdontatme,optimumtact,2
+tgstation,23211,imtakingabreakdontatme,Hatfish,2
+tgstation,23211,imtakingabreakdontatme,jughu ,3
+tgstation,23211,imtakingabreakdontatme,Yoshmaster,2
+Theano,2766,nouiz,abergeron,3
+Theano,2766,nouiz,lamblin ,3
+matplotlib,8157,patniharshit,tacaswell ,3
+matplotlib,8157,patniharshit,NelleV ,2
+matplotlib,8157,patniharshit,phobson,4
+matplotlib,8157,patniharshit,QuLogic,4
+matplotlib,8157,patniharshit,anntzer,3
+zamboni,3413,chuckharmston,ngokevin ,2
+readthedocs.org,1225,singingwolfboy,ericholscher,2
+dipy,770,arokem,MrBago,4
+dipy,770,arokem,samuelstjean,4
+dipy,770,arokem,Garyfallidis,3
+commcare-hq,12020,gcapalbo,snopoke,4
+commcare-hq,12020,gcapalbo,czue,4
+commcare-hq,3315,czue,esoergel,4
+tgstation,27120,Cyberboss ,banthebantz,3
+tgstation,27120,Cyberboss ,GunHog,3
+tgstation,27120,Cyberboss ,Robustin,5
+tgstation,27120,Cyberboss ,lzimann,3
+tgstation,18951,Xhuis,Incoming5643,4
+tgstation,18951,Xhuis,Jazaen ,2
+tgstation,18951,Xhuis,Zilenan91,4
+tgstation,18951,Xhuis,coiax,4
+tgstation,18951,Xhuis,Fox-McCloud,3
+tgstation,18951,Xhuis,Firecage,2
+tgstation,18951,Xhuis,Cebasiz,5
+tgstation,18951,Xhuis,imtakingabreakdontatme,3
+tgstation,18951,Xhuis,Jalleo ,3
+tgstation,18951,Xhuis,GunHog,2
+tgstation,18951,Xhuis,PKPenguin321,4
+tgstation,18951,Xhuis,Chocobro,3
+commcare-hq,6707,wpride,gcapalbo,3
+commcare-hq,6707,wpride,proteusvacuum,3
+commcare-hq,6707,wpride,czue,3
+addons-server,147,a-polivanchuk,clouserw,3
+regulations-parser,34,cmc333333,khandelwal,3
+cryptography,1970,reaperhulk,simo5,4
+cryptography,1970,reaperhulk,lvh,4
+pandas,15652,gfyoung ,jreback ,4
+kivy,4712,inclement,akshayaurora,4
+web2py,88,timrichardson,,3
+tgstation,19837,Jordie0608,optimumtact,3
+Theano,1042,jlowin,nouiz,4
+commcare-hq,9920,dannyroberts,esoergel ,3
+pandas,9508,blbradley,jreback,3
+pandas,9508,blbradley,kennethreitz,4
+pandas,9508,blbradley,slingamn,5
+pandas,9508,blbradley,Lukasa,5
+flask,409,dmishe,rduplain,4
+vumi-go,117,jerith,hodgestar ,4
+vumi-go,117,jerith,dmaclay,4
+mezzanine,479,lorin ,stephenmcd ,4
+kitsune,1873,mythmon ,rlr,3
+matplotlib,1522,NelleV,dmcdougall,4
+matplotlib,1522,NelleV,pelson,4
+libcloud,618,parthiv777,Kami,3
+bcfg2,238,gordonmessmer,solj ,4
+pulp_rpm,154,bowlofeggs,"
+jdob ",2
+sympy,9520,gxyd,jksuom ,3
+otm-core,293,ahinz ,maurizi ,3
+otm-core,293,ahinz ,RickMohr,3
+sunpy,1585,Cadair,ayshih,4
+sunpy,1585,Cadair,bsipocz,4
+commcare-hq,10675,millerdev,benrudolph,2
+commcare-hq,10675,millerdev,dannyroberts,4
+commcare-hq,10675,millerdev,czue,4
+commcare-hq,14667,kmbrgandhi,dimagimon,2
+commcare-hq,14667,kmbrgandhi,proteusvacuum,4
+commcare-hq,14667,kmbrgandhi,NoahCarnahan,5
+commcare-hq,14667,kmbrgandhi,snopoke ,5
+tgstation,19183,ChangelingRain,imtakingabreakdontatme,3
+tgstation,19183,ChangelingRain,Zilenan91,3
+tgstation,19183,ChangelingRain,xxalpha,3
+tgstation,19183,ChangelingRain,Supermichael777,3
+beets,95,mrmachine,sampsyo,4
+configuration,3267,rlucioni,jibsheet,4
+configuration,3267,rlucioni,schenedx,4
+addon-sdk,537,Gozala,ochameau,3
+tgstation,9836,AnturK,Shadowlight213,4
+tgstation,9836,AnturK,Iamgoofball,3
+tgstation,9836,AnturK,Stickymayhem,3
+tgstation,9836,AnturK,theOperand,3
+tgstation,9836,AnturK,phil235,2
+kivy,4392,JamesMakela,inclement,4
+kivy,4392,JamesMakela,tito,2
+kivy,4392,JamesMakela,akshayaurora,3
+kivy,4392,JamesMakela,dessant,3
+tgstation,5460,paprka ,Czarcastic,2
+tgstation,5460,paprka ,ghost,3
+tgstation,5460,paprka ,Wjohn,3
+tgstation,5460,paprka ,Steelpoint,2
+tgstation,5460,paprka ,RemieRichards,2
+tgstation,5460,paprka ,Cheridan,2
+tgstation,5460,paprka ,Atskadan,2
+tgstation,5460,paprka ,TZK13,2
+tgstation,5460,paprka ,optimumtact,3
+tgstation,5460,paprka ,theOperand,2
+commcare-hq,13045,benrudolph,esoergel,3
+Theano,4821,nouiz,abergeron,3
+commcare-hq,8722,nickpell,czue,4
+commcare-hq,8722,nickpell,NoahCarnahan,2
+commcare-hq,8722,nickpell,snopoke,3
+tgstation,15964,RemieRichards ,MMMiracles,3
+tgstation,15964,RemieRichards ,phil235,3
+tgstation,15964,RemieRichards ,Iamgoofball,3
+tgstation,15964,RemieRichards ,duncathan,3
+tgstation,15964,RemieRichards ,KazeEspada,3
+mezzanine,479,lorin,stephenmcd,4
+edx-ora2,738,mushtaqak,waheedahmed,4
+edx-ora2,738,mushtaqak,cahrens,4
+edx-ora2,738,mushtaqak,symbolist ,4
+mne-python,1485,mainakjas,agramfort,4
+flask,1743,homoSapiensSapiens,Ronny Pfannschmidt,4
+flask,1743,homoSapiensSapiens,untitaker,4
+ninja-ide,1780,juancarlospaco,ghost ,4
+kuma,1040,lmorchard,groovecoder,3
+networkx,2092,hagberg,dschult ,4
+teuthology,455,ghost,andrewschoen ,3
+teuthology,455,ghost,"
+ceph-jenkins",4
+luigi,681,erikbern,Tarrasch,4
+luigi,681,erikbern,themalkolm,3
+pandas,5060,jorisvandenbossche,jreback,3
+pandas,5060,jorisvandenbossche,cpcloud,4
+ka-lite,2924,benjaoming,aronasorman,3
+ka-lite,2924,benjaoming,Antrikshy,4
+numba,183,hgrecco,jriehl,4
+pybossa,674,alejandrodob,teleyinex,4
+openSUSE-release-tools,631,jberry-suse,lnussel,4
+openSUSE-release-tools,631,jberry-suse,nilxam,3
+openSUSE-release-tools,631,jberry-suse,DimStar77,3
+openSUSE-release-tools,631,jberry-suse,aplanas,3
+mozmill-ci,511,whimboo ,andreeamatei ,3
+blaze,617,mrocklin,cpcloud,2
+tgstation,5271,Menshin,optimumtact,2
+tgstation,5271,Menshin,MrPerson,2
+tgstation,5271,Menshin,tkdrg,3
+tgstation,5271,Menshin,hornygranny,2
+addon-sdk,811,ochameau ,erikvold,2
+addon-sdk,811,ochameau ,Gozala,2
+pandas,2321,y-p,wesm,3
+scrapy,1532,hoatle,kmike,4
+otter,114,wirehead,cyli ,4
+mezzanine,792,daGrevis,stephenmcd,1
+virt-test,1242,Guannan-Ren,yangdongsheng,4
+virt-test,1242,Guannan-Ren,Imr,3
+virt-test,1242,Guannan-Ren,Hao-Liu,3
+virt-test,1242,Guannan-Ren,leonstack,3
+ESP-Website,906,btidor ,benjaminjkraft,4
+pandas,14537,keshavramaswamy,TomAugspurger ,2
+pandas,14537,keshavramaswamy,jorisvandenbossche,4
+pandas,14537,keshavramaswamy,,3
+tgstation,14352,imtakingabreakdontatme,phil235,1
+tgstation,14352,imtakingabreakdontatme,Supermichael777,1
+tgstation,14352,imtakingabreakdontatme,Cheridan,1
+tgstation,14352,imtakingabreakdontatme,tkdrg,1
+kuma,141,lmorchard,groovecoder,4
+robottelo,3480,rochacbruno,oshtaier,2
+robottelo,3480,rochacbruno,sthirugn,4
+robottelo,3480,rochacbruno,elyezer,4
+nipype,1399,oesteban,chrisfilo,2
+bedrock,851,pmclanahan,Osmose,4
+bedrock,851,pmclanahan,icaaq,2
+pylearn2,1390,goodfeli,nouiz,2
+otm-core,1434,RickMohr,jwalgran,4
+otm-core,1434,RickMohr,maurizi ,4
+kitsune,647,rlr,rehandalal,4
+ipython,3037,techtonik,ivanov,2
+ipython,3037,techtonik,ellisonbg,3
+ipython,3037,techtonik,Carreau,3
+quark,210,roaet,asadoughi,4
+bedrock,1186,kyoshino,pmclanahan ,3
+tgstation,9422,AnturK,xxalpha ,4
+tgstation,9422,AnturK,Jordie0608,4
+tgstation,9422,AnturK,optimumtact ,2
+ipython,3381,minrk,Carreau,2
+ipython,3381,minrk,ellisonbg ,3
+ipython,3381,minrk,ivanov,4
+ipython,3381,minrk,chuckdries ,3
+ipython,3381,minrk,ccordoba12 ,3
+ipython,3381,minrk,takluyver,3
+ipython,3381,minrk,wjakob,3
+ipython,3381,minrk,dkasak,2
+ipython,3381,minrk,kencoken,3
+commcare-hq,5864,benrudolph,dimagimon,2
+commcare-hq,5864,benrudolph,snopoke,4
+commcare-hq,5864,benrudolph,dannyroberts,4
+commcare-hq,5864,benrudolph,czue,4
+commcare-hq,5864,benrudolph,dmyung,3
+tgstation,26045,ChangelingRain ,nfreader,3
+tgstation,26045,ChangelingRain ,Cyberboss,2
+tgstation,26045,ChangelingRain ,optimumtact,2
+tgstation,26045,ChangelingRain ,Shadowlight213,3
+tgstation,26045,ChangelingRain ,Niknakflak,3
+pombola,791,teuben,dracos,2
+zamboni,1042,dash1291 ,washort,4
+werkzeug,891,untitaker,homu,2
+sympy,9247,aktech,jksuom,4
+robottelo,3031,elyezer,omaciel ,4
+robottelo,3031,elyezer,sthirugn,4
+mozmill-ci,316,whimboo ,andreeamatei,4
+matplotlib,4464,tacaswell,efiring,2
+matplotlib,4464,tacaswell,QuLogic,2
+ninja-ide,1926,centaurialpha,diegosarmentero,4
+mne-python,541,dengemann,christianbrodbeck,2
+mne-python,541,dengemann,larsoner,2
+mne-python,541,dengemann,agramfort,4
+pelican,1617,pxquim,justinmayer,4
+pelican,1617,pxquim,goanpeca,2
+bedrock,3149,jgmize,pmclanahan,4
+addons-server,2672,eviljeff ,tofumatt,3
+addons-server,2672,eviljeff ,diox ,4
+requests,4026,floppym,Lukasa,4
+requests,4026,floppym,nateprewitt,4
+requests,4026,floppym,sigmavirus24,4
+requests,4026,floppym,kennethreitz ,4
+tgstation,14011,ChangelingRain,Jordie0608,3
+tgstation,14011,ChangelingRain,ghost,2
+tgstation,14011,ChangelingRain,tkdrg,4
+mne-python,2263,rkmaddox,larsoner ,4
+flask,959,jso,mitsuhiko,1
+pandas,4972,alefnula,jreback,4
+pandas,4972,alefnula,cpcloud,4
+matplotlib,5440,mdboom,efiring,2
+matplotlib,5440,mdboom,tacaswell,3
+matplotlib,5440,mdboom,WeatherGod,2
+matplotlib,5440,mdboom,jenshnielsen,2
+django-debug-toolbar,797,dankram,tim-schilling,1
+networkx,1357,emilienkofman,hagberg,2
+networkx,1357,emilienkofman,chebee7i,2
+ralph,1967,szok ,ar4s,3
+ralph,1967,szok ,mkurek,3
+Minecraft-Overviewer,438,Fenixin,agrif,5
+sunpy,1564,dpshelio,Cadair,2
+kitsune,333,willkg,jsocol,4
+sentry,3222,mattrobenolt,dcramer,4
+deis,4856,monaka,deis-admin,3
+deis,4856,monaka,mboersma,3
+deis,4856,monaka,bacongobbler,4
+buildbot,2163,rayalan,tardyp,2
+buildbot,2163,rayalan,cmouse,3
+commcare-hq,2477,nickpell,biyeun,2
+sympy,1707,zanzibar7,asmeurer,2
+sympy,1707,zanzibar7,jrioux,3
+sympy,1707,zanzibar7,certik,4
+remo,1235,akatsoulas,glogiotatidis,2
+pandas,2012,jleahy,changhiskhan,4
+addons-server,560,magopian,robhudson,4
+celery,186,jbochi ,ask,2
+celery,186,jbochi ,nvie,2
+requests,3660,pawelmhm,Lukasa,4
+pip,3707,alquerci,dstufft,1
+pip,3707,alquerci,pradyunsg,1
+pip,3707,alquerci,BrownTruck,3
+BinPy,155,shrutig,mohitgujarathi14,2
+BinPy,155,shrutig,debugger22,1
+pandas,9475,jorisvandenbossche,jreback,4
+ipython,6015,jcjaskula,Carreau,4
+ipython,6015,jcjaskula,damianavila ,4
+statsmodels,3444,josef-pkt,TomAugspurger,4
+rootpy,71,ndawe,pwaller,4
+gunicorn,957,gcallaghan,tilgovi,3
+gunicorn,957,gcallaghan,benoitc ,4
+oh-mainline,1735,ananyacleetus,Deborah-Digges,4
+oh-mainline,1735,ananyacleetus,ehashman,4
+pylearn2,790,ghost ,goodfeli,3
+virt-test,1582,lmr,yangdongsheng,4
+iris,1212,pelson,ajdawson ,2
+iris,1212,pelson,bjlittle,4
+robottelo,4380,svtkachenko,pondrejk,4
+robottelo,4380,svtkachenko,oshtaier,4
+spyne,347,Dxist,plq ,2
+kitsune,674,willkg,rlr,4
+riak-python-client,102,armon,seancribbs,4
+sympy,11619,mickyaero,smichr,2
+beets,1947,wisp3rwind,sampsyo,4
+tgstation,864,Ricotez,ghost,4
+tgstation,864,Ricotez,Nodrak,3
+tgstation,864,Ricotez,caelaislinn,4
+buildbot,1923,iblis17,jaredgrubb,4
+iris,2071,ehogan,ajdawson,4
+pybossa,816,alejandrodob,teleyinex,4
+commcare-hq,6857,snopoke,twymer,4
+commcare-hq,6857,snopoke,esoergel,4
+commcare-hq,14583,snopoke,calellowitz,2
+cryptography,1368,reaperhulk,alex,2
+cryptography,1368,reaperhulk,jenkins-cryptography,4
+addons-server,889,magopian,EnTeQuAk,4
+requests,1105,slingamn,kennethreitz,4
+mozmill-ci,768,whimboo,sydvicious,4
+mopidy,722,trygveaa,jodal,4
+ome-documentation,449,hflynn,ghost,4
+ome-documentation,449,hflynn,jburel ,3
+commcare-hq,3725,biyeun,czue,2
+flask,1172,cgar ,untitaker,4
+ipython,3674,minrk,ivanov,4
+pandas,11690,jreback ,shoyer,4
+matplotlib,5570,tomoemon,jenshnielsen ,2
+matplotlib,5570,tomoemon,WeatherGod,3
+pyramid,51,blaflamme,mcdonc,4
+flask,1751,royopa,wlhlm,3
+flask,1751,royopa,,2
+pandas,8741,davidastephens,jreback,4
+commcare-hq,1475,czue,twymer,3
+pandas,8030,cpcloud,jreback,4
+blaze,1467,llllllllll,kwmsmith,4
+ipython,10443,Carreau,thisch,1
+vumi-go,722,justinvdm,jerith ,4
+cryptography,2562,evilaliv3,alex,3
+cryptography,2562,evilaliv3,reaperhulk,2
+webview,317,dak,philschatz,4
+vispy,193,mssurajkaiga,rossant,2
+vispy,193,mssurajkaiga,campagnola,3
+vispy,193,mssurajkaiga,almarklein,4
+vispy,193,mssurajkaiga,larsoner,2
+vispy,193,mssurajkaiga,rougier,2
+robottelo,1681,JacobCallahan,Ichimonji10,4
+robottelo,1681,JacobCallahan,sthirugn,4
+pip,2560,xavfernandez,Ivoz,2
+beets,520,silb,sampsyo,5
+beets,520,silb,nitper ,5
+teuthology,712,ghost,zmc ,3
+numba,1024,pitrou,seibert,3
+virt-test,2030,ldoktor,lmr,4
+sympy,1070,smichr,asmeurer,2
+sympy,1070,smichr,flacjacket,4
+tgstation,5993,paprka,Atskadan,1
+tgstation,5993,paprka,phil235,2
+tgstation,5993,paprka,Razharas,2
+tgstation,5993,paprka,xxalpha,1
+tgstation,5993,paprka,Aranclanos,3
+tgstation,5993,paprka,Steelpoint,1
+tgstation,5993,paprka,Kraseo ,1
+configuration,2269,sarina,feanil,4
+pandas,7675,jreback,yarikoptic,3
+addon-sdk,729,Mossop,canuckistani ,3
+Pillow,741,aclark4life,hugovk,4
+kitsune,144,tgavankar,erikrose,4
+zamboni,2693,mstriemer,andymckay,2
+sunpy,1444,Cadair,ayshih,4
+MakeAPI,246,jbuck,cadecairos,4
+configuration,1810,e0d,feanil,4
+configuration,1810,e0d,fredsmith,4
+psychopy,850,kohlman,peircej,3
+beets,1911,jackwilsdon,sampsyo,4
+tgstation,21984,Cyberboss,Supermichael777,1
+tgstation,21984,Cyberboss,imtakingabreakdontatme,1
+tgstation,21984,Cyberboss,Chnkr,1
+tgstation,21984,Cyberboss,jaxy15,1
+tgstation,21984,Cyberboss,ExcessiveUseOfCobblestone,2
+tgstation,21984,Cyberboss,Kromgar,2
+tgstation,21984,Cyberboss,optimumtact ,3
+tgstation,1219,Aranclanos,caelaislinn,3
+quark,306,Cerberus98,ghost,4
+zamboni,2985,kumar303,muffinresearch,4
+bedrock,2745,flodolo,pmclanahan,3
+tgstation,2305,Giacom,Ergovisavi,2
+tgstation,2305,Giacom,Razharas,3
+tgstation,2305,Giacom,ChuckTheSheep,3
+tgstation,2305,Giacom,Aranclanos,3
+kitsune,2752,willkg,mythmon,2
+Theano,3035,thomasmesnard,carriepl,3
+openSUSE-release-tools,631,jberry-suse,lnussel,3
+openSUSE-release-tools,631,jberry-suse,nilxam,2
+openSUSE-release-tools,631,jberry-suse,aplanas,2
+web2py,1017,raj454raj,omartrinidad,4
+symfony-docs-fr,710,Zzortell,gregquat,4
+virt-test,1347,jzupka,ldoktor,4
+virt-test,1347,jzupka,lmr,4
+girder,1679,zachmullen,msmolens ,2
+girder,1679,zachmullen,jbeezley,3
+pulp_rpm,725,dkliban,pulpbot,3
+pulp_rpm,725,dkliban,bmbouter,4
+vumi,124,piet-praekelt,dmaclay,3
+matplotlib,6039,jonchar ,tacaswell ,4
+scrapy,2189,redapple ,kmike,3
+ome-documentation,1079,joshmoore ,ximenesuk,4
+ome-documentation,1079,joshmoore ,hflynn,4
+django-cms,4410,vxsx,FinalAngel,5
+ipython,9522,Carreau,takluyver,2
+salt-cloud,873,sebgoa,s0undt3ch,4
+zamboni,3414,diox,chuckharmston,2
+c2cgeoportal,2402,sbrunner,fredj,4
+buildbot,1777,apilloud,sa2ajj,4
+mongo-python-driver,309,oxymor0n,ajdavis,4
+mongo-python-driver,309,oxymor0n,llvtt,4
+pootle,4635,ta2-1,unho,4
+pootle,4635,ta2-1,julen,4
+requests,580,slingamn,kennethreitz,5
+commcare-hq,15178,emord,benrudolph,5
+commcare-hq,15178,emord,gcapalbo,4
+bedrock,1729,alexgibson,jpetto,4
+pip,3837,njsmith,dstufft,2
+pip,3837,njsmith,xavfernandez,2
+pip,3837,njsmith,BrownTruck,3
+commcare-hq,9025,TylerSheffels,czue,3
+commcare-hq,9025,TylerSheffels,snopoke,2
+django-rest-framework,387,ludwigkraatz,tomchristie ,3
+matplotlib,3534,tacaswell,WeatherGod ,3
+matplotlib,3534,tacaswell,kay10,2
+configuration,3022,jibsheet,e0d,4
+XBlock,264,cpennington,doctoryes,3
+XBlock,264,cpennington,dmitchell,3
+vumi-go,103,smn ,hodgestar,4
+buildbot,1418,gangefors,sa2ajj ,4
+socorro,917,twobraids,rhelmer ,3
+socorro,917,twobraids,peterbe,4
+socorro,917,twobraids,erikrose,2
+scikit-image,1704,MartinSavc,JDWarner,2
+scikit-image,1704,MartinSavc,emmanuelle,4
+scikit-image,1704,MartinSavc,tacaswell ,2
+scikit-image,1704,MartinSavc,stefanv,4
+zamboni,2769,andymckay ,robhudson,3
+bedrock,3143,jpetto,alexgibson,4
+play1,835,opyate,xael-fry,2
+play1,835,opyate,gpgekko,2
+addons-server,360,davidbgk,magopian ,4
+matplotlib,2048,takluyver,mdboom,3
+fjord,3,willkg,rlr ,2
+commcare-hq,4673,esoergel,dimagimon,4
+commcare-hq,4673,esoergel,diox,3
+cryptography,1998,etrauschke,reaperhulk,4
+virt-test,332,zhouqt,lmr,4
+commcare-hq,1901,snopoke ,czue ,3
+socorro,580,ghost,adngdb,4
+numba,1789,pitrou,stuartarchibald,4
+numba,1789,pitrou,seibert ,2
+youtube-dl,7819,dgoguerra,dstftw,1
+commcare-hq,10456,snopoke ,czue,3
+pombola,2051,duncanparkes,tmtmtmtm ,4
+tp-qemu,604,PandaWei,xutian,4
+tgstation,21989,Chnkr,ExcessiveUseOfCobblestone,4
+tgstation,21989,Chnkr,PKPenguin321,2
+tgstation,21989,Chnkr,Fox-McCloud,1
+tgstation,21989,Chnkr,YakumoChen,4
+tgstation,21989,Chnkr,"
+imtakingabreakdontatme",4
+c2cgeoportal,1296,sbrunner,asaunier,4
+commcare-hq,10280,czue,benrudolph ,3
+youtube-dl,1601,FiloSottile,phihag,4
+youtube-dl,1601,FiloSottile,jaimeMF,4
+configuration,1897,feanil,maxrothman,4
+django-rest-framework,2238,Catstyle ,tomchristie,2
+tgstation,5966,hornygranny,RemieRichards,3
+tgstation,5966,hornygranny,theOperand,3
+tgstation,5966,hornygranny,optimumtact ,3
+tgstation,5966,hornygranny,Razharas,3
+mne-python,3569,kaczmarj,agramfort,2
+mne-python,3569,kaczmarj,kingjr,3
+solitude,53,andymckay,wraithan,4
+luigi,1860,daveFNbuck,Tarrasch,3
+girder,1495,zachmullen,cpatrick,4
+ninja-ide,1777,diegosarmentero,ghost,4
+requests,3763,nateprewitt,Lukasa,2
+pelican,1927,Scheirle,randomllama,2
+pelican,1927,Scheirle,Totktonada,3
+pelican,1927,Scheirle,justinmayer,4
+socorro,3501,adngdb,peterbe,2
+mozmill-ci,90,davehunt,whimboo,4
+commcare-hq,12575,esoergel,czue,4
+libcloud,616,wido,sebgoa,2
+libcloud,616,wido,Kami ,4
+beets,1630,pkess,sampsyo,4
+feincms,545,feczo,matthiask,4
+wagtail,3377,chosak,gasman,2
+pylearn2,1353,minhlab,lamblin,3
+pylearn2,1353,minhlab,bartvm,4
+freeseer,620,umcsdon,mtomwing,3
+freeseer,620,umcsdon,dideler,3
+ipython,4708,damianavila,Carreau,2
+ipython,4708,damianavila,takluyve,3
+ipython,4708,damianavila,ellisonbg,4
+pandas,1025,changhiskhan,wesm,3
+kuma,1891,darkwing,openjck,3
+kuma,1891,darkwing,groovecoder,3
+gaffer,1906,danieldresser,johnhaddon,3
+Theano,1656,lamblin,nouiz,3
+sympy,10427,Arafatk,aktech,4
+sympy,10427,Arafatk,smichr,3
+sympy,10427,Arafatk,jksuom,3
+pull,,biyeun,dimagimon,3
+pull,,biyeun,czue,3
+robottelo,3703,abalakh,oshtaier,2
+robottelo,3703,abalakh,renzon,3
+robottelo,3703,abalakh,rplevka,3
+salt-cloud,44,dangarthwaite,thatch45,4
+kitsune,1886,rlr,mythmon,3
+hashstack,353,ahmadia,certik,3
+buildbot,1044,yetanotherion,djmitche,3
+youtube-dl,4356,akretz,jaimeMF,3
+invenio,2774,dset0x,tiborsimko,3
+invenio,2774,dset0x,jirikuncar,3
+invenio,2774,dset0x,jalavik,3
+invenio,2774,dset0x,PXke,3
+scikit-image,118,zpincus,stefanv,2
+deis,1437,bacongobbler,carmstrong,3
+deis,1437,bacongobbler,mboersma,4
+kuma,4181,jwhitlock,safwanrahman,3
+kuma,4181,jwhitlock,escattone,4
+pandas,5761,chappers,y-p,4
+pandas,5761,chappers,jtratner,3
+pandas,5761,chappers,jorisvandenbossche,3
+pandas,5761,chappers,jreback,3
+topaz,283,timfel,alex,3
+zipline,337,humdings,twiecki,4
+kitsune,1025,browning,willkg,3
+kitsune,1025,browning,rlr,3
+kuma,2193,darkwing,openjck,5
+kitsune,2570,willkg,mythmon,4
+marketplace-tests,276,teodosia,AndreiH,2
+marketplace-tests,276,teodosia,AlinT,4
+robottelo,2594,sthirugn,abalakh,3
+robottelo,2594,sthirugn,Ichimonji10,3
+sentry,3833,mattrobenolt,dcramer,3
+autotest-docker,187,cevich,ldoktor,2
+autotest-docker,187,cevich,jzupka,3
+tgstation,20893,Screemonster,phil235,2
+tgstation,20893,Screemonster,optimumtact,2
+ralph,30,ambv,dangercheese,3
+ralph,30,ambv,quamilek,3
+shinken,318,titilambert,xkilian,3
+shinken,318,titilambert,h4wkmoon,3
+shinken,318,titilambert,naparuba,3
+shinken,318,titilambert,titilambert,3
+Theano,5184,YangZhang4065,nouiz,2
+Theano,5184,YangZhang4065,lamblin,3
+Theano,5184,YangZhang4065,f0k,3
+ipython,5886,mattja,minrk,3
+pandas,4300,Komnomnomnom,jreback,4
+sm,340,letsboogey,chandrikas,4
+deis,5047,slack,mention-bot,3
+deis,5047,slack,bacongobbler,3
+tp-libvirt,737,waynesun09,Hao-Liu,4
+buildbot,2594,rodrigc,mention-bot,3
+buildbot,2594,rodrigc,tardyp,3
+XBlock,301,adampalay,cpennington,3
+XBlock,301,adampalay,waheedahmed,3
+kivy,868,luuvish,tito,4
+pip,2217,dstufft,alex,3
+buildbot,864,MichaelMayorov,djmitche,3
+django-rest-framework,2053,thedrow,tomchristie,2
+django-rest-framework,2053,thedrow,iorlas,3
+ipython,1898,minrk,fperez,4
+commcare-hq,15206,dannyroberts,benrudolph,4
+addon-sdk,673,Gozala,erikvold,3
+bedrock,2100,TheoChevalier,jpetto,4
+bedrock,2100,TheoChevalier,sgarrity,3
+ka-lite,2845,cpauya,aronasorman,3
+ka-lite,2845,cpauya,jtamiace,2
+Kawaz3rd,248,giginet,luzfcb,3
+Kawaz3rd,248,giginet,lambdalisue,4
+bedrock,3501,l-hedgehog,alexgibson,4
+django-rest-framework,1575,ewdicus,carltongibson,3
+django-rest-framework,1575,ewdicus,tomchristie,2
+remo,712,swarnava,glogiotatidis,3
+ESP-Website,1885,luanthe,benjaminjkraft,2
+mne-python,2978,larsoner,jona-sassenhagen,4
+mne-python,2978,larsoner,agramfort,4
+mne-python,2978,larsoner,choldgraf,3
+mne-python,2978,larsoner,kingjr,4
+mne-python,2978,larsoner,teonbrooks,3
+kuma,3284,groovecode,stephaniehobson,3
+kuma,3284,groovecode,darkwing,5
+kuma,3284,groovecode,jezdez,4
+tgstation,25373,coiax,imtakingabreakd,1
+tgstation,25373,coiax,ChangelingRain,1
+fjord,32,willkg,rlr,4
+dipy,598,MarcCote,Garyfallidis,3
+mopidy,1571,rec,adamcik,4
+tp-qemu,222,xutian,spcui,4
+pip,1335,dstufft,pfmoore,4
+pip,1335,dstufft,qwcode,3
+pandas,1425,orbitfold,wesm,3
+robottelo,3195,sthirugn,oshtaier,3
+buildbot,18,maruel,benallard,3
+buildbot,18,maruel,djmitche,3
+matplotlib,5044,astrofrog,jenshnielsen,3
+matplotlib,5044,astrofrog,mdehoon,4
+matplotlib,5044,astrofrog,WeatherGod,4
+matplotlib,5044,astrofrog,tacaswell,4
+deis,4196,mboersma,carmstrong,4
+deis,4196,mboersma,technosophos,4
+ome-documentation,62,sbesson,ximenesuk,3
+ome-documentation,62,sbesson,jburel,4
+ome-documentation,62,sbesson,joshmoore,4
+ome-documentation,62,sbesson,sbesson,3
+eden,637,arnavkagrawal,flavour,2
+commcare-hq,15258,orangejenny,biyeun,4
+sympy,610,smichr,certik,4
+addon-sdk,993,jsantell,ZER0,2
+luigi,913,Tarrasch,stephenpascoe,2
+pandas,5978,MichaelWS,jreback,3
+tgstation,12547,optimumtact,Incoming5643,3
+tgstation,12547,optimumtact,Shadowlight213,3
+tgstation,12547,optimumtact,Ricotez,3
+kitsune,1761,mythmon,rlr,4
+tgstation,15043,imtakingabreakd,neersighted,3
+tgstation,15043,imtakingabreakd,tkdrg,2
+tgstation,15043,imtakingabreakd,Supermichael777,3
+youtube-dl,5966,ciferkey,dstftw,2
+ipython,1693,bfroehle,minrk,4
+SimpleCV,453,acrlakshman,jayrambhia,4
+SimpleCV,453,acrlakshman,kscottz,2
+virt-test,1820,FengYang,ypu,4
+robottelo,1409,sthirugn,omaciel,3
+robottelo,1409,sthirugn,elyezer,3
+iris,151,bblay,pelson,2
+iris,151,bblay,esc24,3
+iris,151,bblay,cpelley,3
+invenio,3308,blixhavn,jirikuncar,3
+ESP-Website,208,jmoldow,aseering,4
+addons-server,4006,sarracini,muffinresearch,3
+scrapy,687,curita,dangra,4
+sympy,12488,maurogaravello,smichr,4
+sympy,12488,maurogaravello,kshitij10496,4
+numba,12,jaberg,twiecki,3
+numba,12,jaberg,jriehl,2
+numba,12,jaberg,teoliphant,2
+numba,12,jaberg,ilanschnell,2
+nipype,963,oesteban,satra,3
+botocore,620,kyleknap,jamesls,4
+tgstation,393,Petethegoat,Aranclanos,3
+ipython,5313,minrk,ellisonbg,3
+ipython,5313,minrk,jdfreder,4
+tgstation,13736,MrStonedOne,tkdrg,4
+deis,3627,bacongobbler,carmstrong,4
+deis,3627,bacongobbler,mboersma,4
+deis,3627,bacongobbler,smothiki,4
+deis,3627,bacongobbler,mboersma,4
+Theano,4258,lamblin,abergeron,3
+Theano,4258,lamblin,nouiz,3
+nikola,648,ralsina,arusahni,4
+nikola,648,ralsina,Kwpolska,3
+nikola,648,ralsina,da2x,3
+pootle,5387,phlax,unho,4
+django-cms,4504,vxsx,yakky,3
+django-cms,4504,vxsx,mkoistinen,2
+django-cms,4504,vxsx,FinalAngel,4
