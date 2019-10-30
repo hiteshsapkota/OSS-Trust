@@ -24,6 +24,10 @@ For the response format refer to the link: https://developer.github.com/v3/pulls
 
 10. MAE_classifier.json consists of MAE score for the regression techniques described in Table 4. It has following format:
   {Classifier_name: [MAE values for 30 repetitions]}
+11. time_performance_classifier.json: consists of a MAE score for the time based classifier
+12. time_performance_regression.json: consists of a MAE score for time based regression models
+13. repo_score.json: consists of a MAE score for each repository
+14. 
 
 CODE DESCRIPTION:
 =================
